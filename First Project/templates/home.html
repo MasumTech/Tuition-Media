@@ -1,0 +1,12 @@
+{% extends 'basic.html' %}
+
+{% block body %}
+
+<h1>This is Home Page!</h1>
+ {% for name in  namelist%}
+ {{name}} </br>
+ {% endfor %}
+
+{% endblock body %}
+
+

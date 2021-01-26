@@ -1,0 +1,26 @@
+{% extends 'basic.html' %}
+
+{% block body %}
+<h1>Contact Please</h1>
+
+<div class="container">
+
+<form method="POST"> 
+ {% csrf_token %}
+   {{form}}
+
+ <button type="Submit">Submit</button>
+
+
+</form>
+
+
+
+
+
+</div>
+
+
+{% endblock body %}
+
+
