@@ -9,6 +9,7 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
            form.save() 
+           form = ContactForm() 
            
     else:
         form = ContactForm()   
